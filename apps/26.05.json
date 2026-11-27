@@ -1,7 +1,7 @@
 {
   "format": 1,
   "branch": "26.05",
-  "serial": 1,
+  "serial": 2,
   "apps": {
     "helium": {
       "versions": [
@@ -95,7 +95,16 @@
       "name": "Claude Code"
     },
     "millennium": {
-      "versions": [],
+      "versions": [
+        {
+          "version": "3.6.3-beta.1",
+          "source": "mabos-packages",
+          "attr": "millennium",
+          "rev": "d08906e0a801c9a652895539235c5f3bc936d3fb",
+          "narHash": "sha256-A2wtUt0E7gimw7qyr/PWiEMfOCjQrm62HNdb5QmGeOM=",
+          "date": "2026-11-27"
+        }
+      ],
       "name": "Millennium"
     }
   },
