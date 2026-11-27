@@ -29,6 +29,10 @@ SYSTEM = "x86_64-linux"
 # where they come from and their attribute there
 APPS = {
     "helium": {"name": "Helium", "source": "mabos-packages", "attr": "helium"},
+    "firefox": {"name": "Firefox", "source": "nixpkgs", "attr": "firefox"},
+    "librewolf": {"name": "LibreWolf", "source": "nixpkgs", "attr": "librewolf"},
+    "chromium": {"name": "Chromium", "source": "nixpkgs", "attr": "chromium"},
+    "google-chrome": {"name": "Google Chrome", "source": "nixpkgs", "attr": "google-chrome"},
     "telegram": {"name": "Telegram", "source": "nixpkgs", "attr": "telegram-desktop"},
     "freshgram": {"name": "freshGram", "source": "mabos-packages", "attr": "freshgram"},
     "vesktop": {"name": "Vesktop", "source": "nixpkgs", "attr": "vesktop"},
