@@ -111,8 +111,10 @@ def main():
                 if built is None:
                     continue
                 rev, narhash = built
+                # Not every package has `version` (Millennium's doesn't): then its name's
                 version = run("nix", "eval", "--raw",
-                              f"github:mabasterYT/mabos-packages/{rev}#packages.{SYSTEM}.{info['attr']}.version")
+                              f"github:mabasterYT/mabos-packages/{rev}#packages.{SYSTEM}.{info['attr']}",
+                              "--apply", "p: p.version or (builtins.parseDrvName p.name).version")
         except RuntimeError as error:
             print(f"{app}: skipped ({error})")
             continue
